@@ -1,0 +1,32 @@
+/* src/styles/fonts.css */
+
+/* --- Definición para la fuente Bevellier --- */
+@font-face {
+  font-family: 'Bevellier';
+  /* Le indicamos la ruta al archivo de la fuente */
+  src: url('/fonts/Bevellier-Black.woff2') format('woff2');
+  /* 'Black' corresponde a un grosor de 900 */
+  font-weight: 900;
+  font-style: normal;
+  /* Ayuda a que la fuente se cargue de forma más eficiente */
+  font-display: swap;
+}
+
+/* --- Definiciones para la fuente Clash Display --- */
+@font-face {
+  font-family: 'Clash Display';
+  src: url('/fonts/ClashDisplay-Medium.woff2') format('woff2');
+  /* 'Medium' corresponde a un grosor de 500 */
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Clash Display';
+  src: url('/fonts/ClashDisplay-Semibold.woff2') format('woff2');
+  /* 'Semibold' corresponde a un grosor de 600 */
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
