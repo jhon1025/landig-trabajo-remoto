@@ -1,0 +1,117 @@
+<div class="relative w-full h-0 z-50 flex justify-center items-center pointer-events-none">
+    
+    <div class="font-display absolute w-[110vw] rotate-2 shadow-2xl bg-[#FAED37] border-y-[5px] border-black py-2 origin-center transform-gpu">
+        
+        <div class="marquee-track flex overflow-hidden items-center">
+            
+            <div class="marquee-content flex items-center shrink-0">
+                
+                <div class="flex items-center mx-8">
+                    <span class="text-xl md:text-2xl font-black text-black uppercase tracking-widest whitespace-nowrap">
+                        TALLER EN VIVO
+                    </span>
+                </div>
+
+                <div class="flex items-center mx-8">
+                    <img src="/ISOTIPONEGATIVO.svg" alt="Logo Emprendedoras" class="w-12 h-12 object-contain scale-125" />
+                </div>
+
+                <div class="flex items-center gap-2 mx-8">
+                    <svg class="w-8 h-8 text-black" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><path d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+                    <span class="text-xl md:text-2xl font-black text-black uppercase tracking-widest whitespace-nowrap">
+                        ÚLTIMOS CUPOS
+                    </span>
+                </div>
+
+                <div class="flex items-center mx-8">
+                    <img src="/ISOTIPONEGATIVO.svg" alt="Logo Emprendedoras" class="w-12 h-12 object-contain scale-125" />
+                </div>
+
+                <div class="flex items-center mx-8">
+                    <span class="text-xl md:text-2xl font-black text-black uppercase tracking-widest whitespace-nowrap">
+                        MAPA DE SUEÑOS 2026
+                    </span>
+                </div>
+
+                <div class="flex items-center mx-8">
+                    <img src="/ISOTIPONEGATIVO.svg" alt="Logo Emprendedoras" class="w-12 h-12 object-contain scale-125" />
+                </div>
+
+                <div class="flex items-center gap-2 mx-8">
+                    <span class="text-2xl">🔥</span>
+                    <span class="text-xl md:text-2xl font-black text-black uppercase tracking-widest whitespace-nowrap">
+                        TU MEJOR AÑO
+                    </span>
+                </div>
+
+                 <div class="flex items-center mx-8">
+                    <img src="/ISOTIPONEGATIVO.svg" alt="Logo Emprendedoras" class="w-12 h-12 object-contain scale-125" />
+                </div>
+
+            </div>
+
+            <div class="marquee-content flex items-center shrink-0">
+                
+                 <div class="flex items-center mx-8">
+                    <span class="text-xl md:text-2xl font-black text-black uppercase tracking-widest whitespace-nowrap">
+                        TALLER EN VIVO
+                    </span>
+                </div>
+
+                <div class="flex items-center mx-8">
+                    <img src="/ISOTIPONEGATIVO.svg" alt="Logo Emprendedoras" class="w-12 h-12 object-contain scale-125" />
+                </div>
+
+                <div class="flex items-center gap-2 mx-8">
+                    <svg class="w-8 h-8 text-black" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><path d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+                    <span class="text-xl md:text-2xl font-black text-black uppercase tracking-widest whitespace-nowrap">
+                        ÚLTIMOS CUPOS
+                    </span>
+                </div>
+
+                <div class="flex items-center mx-8">
+                    <img src="/ISOTIPONEGATIVO.svg" alt="Logo Emprendedoras" class="w-12 h-12 object-contain scale-125" />
+                </div>
+
+                <div class="flex items-center mx-8">
+                    <span class="text-xl md:text-2xl font-black text-black uppercase tracking-widest whitespace-nowrap">
+                        MAPA DE SUEÑOS 2026
+                    </span>
+                </div>
+
+                <div class="flex items-center mx-8">
+                    <img src="/ISOTIPONEGATIVO.svg" alt="Logo Emprendedoras" class="w-12 h-12 object-contain scale-125" />
+                </div>
+
+                <div class="flex items-center gap-2 mx-8">
+                    <span class="text-2xl">🔥</span>
+                    <span class="text-xl md:text-2xl font-black text-black uppercase tracking-widest whitespace-nowrap">
+                        TU MEJOR AÑO
+                    </span>
+                </div>
+
+                 <div class="flex items-center mx-8">
+                    <img src="/ISOTIPONEGATIVO.svg" alt="Logo Emprendedoras" class="w-12 h-12 object-contain scale-125" />
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<style is:global>
+    /* Esto previene que la cinta rompa el ancho en móviles */
+    html, body {
+        overflow-x: hidden;
+        width: 100%;
+        position: relative;
+    }
+
+    @keyframes scroll {
+        0% { transform: translateX(0); }
+        100% { transform: translateX(-100%); }
+    }
+    .marquee-track { display: flex; width: 100%; overflow: hidden; }
+    .marquee-content { animation: scroll 25s linear infinite; display: flex; }
+</style>
