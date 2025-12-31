@@ -1,0 +1,227 @@
+---
+// src/components/Hero.astro
+---
+
+<section id="heroForm" class="relative w-full min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-[#E75F24] via-[#E75F24] to-[#D54D15] py-20 px-4">
+  
+  <!-- Grid pattern más tech -->
+  <div class="absolute inset-0 z-0">
+    <div class="absolute inset-0 bg-[linear-gradient(to_right,#ffffff1a_1px,transparent_1px),linear-gradient(to_bottom,#ffffff1a_1px,transparent_1px)] bg-[size:14px_24px]"></div>
+    <div class="absolute inset-0 bg-gradient-to-t from-[#E75F24] via-transparent to-[#E75F24]/50"></div>
+  </div>
+  
+  <!-- Elementos decorativos tech -->
+  <div class="absolute top-20 left-10 w-72 h-72 bg-[#FAED37]/30 rounded-full blur-[100px] animate-float"></div>
+  <div class="absolute bottom-20 right-10 w-96 h-96 bg-[#FAED37]/20 rounded-full blur-[120px] animate-float-delayed"></div>
+  <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-white/10 rounded-full blur-[150px]"></div>
+
+  <div class="container mx-auto max-w-5xl relative z-10">
+    
+    <div class="flex flex-col items-center text-center space-y-8">
+      
+      <!-- Badge -->
+      <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/20 border border-white/30 backdrop-blur-xl animate-fade-in">
+        <span class="relative flex h-2 w-2">
+          <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#FAED37] opacity-75"></span>
+          <span class="relative inline-flex rounded-full h-2 w-2 bg-[linear-gradient(180deg,_#3ADE4A_0%,_#43A047_100%)]"></span>
+        </span>
+        <span class="text-white text-sm font-display font-medium tracking-wide uppercase">
+          MI 2026 YA ESTÁ MANIFESTADO
+        </span>
+      </div>
+       <div class="container mx-auto max-w-lg text-center relative z-10">
+        <div class="mb-8">
+            <img src="/logo_emprendedoras_en_panales.svg" alt="Logo DAG" class="mx-auto w-20" />
+        </div>
+
+      <!-- Título principal -->
+      <div class="space-y-6 animate-fade-in-up">
+        <h1 class="text-5xl md:text-6xl lg:text-7xl font-bold text-white tracking-tight">
+          Taller Mapa de
+          <span class="block mt-2 bg-gradient-to-r from-[#FAED37] via-white to-[#FAED37] bg-clip-text text-transparent animate-gradient">
+            sueños
+          </span>
+        </h1>
+        
+        <p class="text-xl md:text-2xl text-white/90 max-w-2xl mx-auto font-display font-light leading-relaxed">
+          Conecta con la visión que tu alma conoce.
+        </p>
+      </div>
+
+      <!-- Stats o features -->
+      <div class="flex flex-wrap justify-center gap-8 py-8 animate-scale-in">
+        <div class="text-center">
+          <div class="text-3xl font-bold text-white">2026</div>
+          <div class="text-sm  font-display  text-white/70 mt-1">Tu año</div>
+        </div>
+        <div class="w-px h-12 bg-white/30"></div>
+        <div class="text-center">
+          <div class="text-3xl font-bold text-white">1 Día</div>
+          <div class="text-sm  font-display  text-white/70 mt-1">Transformación</div>
+        </div>
+        <div class="w-px h-12 bg-white/30"></div>
+        <div class="text-center">
+          <div class="text-3xl font-bold text-white">100%</div>
+          <div class="text-sm  font-display text-white/70 mt-1">Online</div>
+        </div>
+      </div>
+
+      <!-- Formulario -->
+      <div class="w-full max-w-lg mx-auto relative z-20 animate-scale-in">
+        <form 
+          name="contacto"
+          method="POST"
+          data-netlify="true"
+          action="/gracias"
+          class="relative bg-white/10 backdrop-blur-2xl border border-white/20 p-8 rounded-2xl shadow-2xl"
+        >
+          <!-- Badge de fecha -->
+          <div class="absolute -top-4 left-1/2 transform -translate-x-1/2 z-10">
+            <div class="bg-white text-[#E75F24] text-sm   py-2 px-6 rounded-full shadow-lg border border-[#E75F24]/20">
+              <span class="flex font-display items-center gap-2">
+                
+                Miércoles 14 de Enero - 7 PM
+              </span>
+            </div>
+          </div>
+  
+          <input type="hidden" name="form-name" value="contacto" />
+  
+          <!-- Encabezado del formulario -->
+          <div class="mt-6 mb-8 text-center">
+            <h3 class="text-2xl font-bold text-white mb-2">
+              Reserva tu lugar
+            </h3>
+            <p class="text-white/80 font-display  text-sm">
+              Completa el formulario y asegura tu acceso inmediato
+            </p>
+          </div>
+          
+          <!-- Campos del formulario -->
+          <div class="space-y-4">
+            <div class="relative group">
+              <input 
+                type="text" 
+                id="nombre" 
+                name="Nombre" 
+                placeholder="Nombre completo" 
+                required 
+                class="w-full px-4 py-3.5 rounded-lg bg-white/95 border border-white/20 text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-[#FAED37] focus:border-transparent transition-all duration-300" 
+              />
+            </div>
+            
+            <div class="relative group">
+              <input 
+                type="email" 
+                id="email" 
+                name="Email" 
+                placeholder="Correo electrónico" 
+                required 
+                class="w-full px-4 py-3.5 rounded-lg bg-white/95 border border-white/20 text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-[#FAED37] focus:border-transparent transition-all duration-300" 
+              />
+            </div>
+            
+            <div class="relative group">
+              <input 
+                type="tel" 
+                id="celular" 
+                name="Celular" 
+                placeholder="Número de celular" 
+                required 
+                class="w-full px-4 py-3.5 rounded-lg bg-white/95 border border-white/20 text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-[#FAED37] focus:border-transparent transition-all duration-300" 
+              />
+            </div>
+          </div>
+  
+          <!-- Botón -->
+          <button 
+            type="submit" 
+            class="group relative w-full mt-8 bg-gradient-to-r from-[#FAED37] to-[#fff56e] text-black text-base font-bold py-4 rounded-lg overflow-hidden transition-all duration-300 hover:shadow-[0_0_30px_rgba(250,237,55,0.6)] hover:scale-[1.02] active:scale-100 uppercase tracking-wide"
+          >
+            <span class="relative z-10 flex items-center justify-center gap-2">
+              Únete ahora
+              <svg class="w-5 h-5 transform group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+              </svg>
+            </span>
+            <div class="absolute inset-0 bg-gradient-to-r from-[#fff56e] to-[#FAED37] opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+          </button>
+
+          <!-- Trust indicators -->
+          <div class="mt-6 flex items-center justify-center gap-6 text-xs text-white/70">
+            <div class="flex items-center gap-1">
+              <svg class="w-4 h-4 text-[#FAED37]" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+              </svg>
+              <span>Registro seguro</span>
+            </div>
+            <div class="flex items-center gap-1">
+              <svg class="w-4 h-4 text-[#FAED37]" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+              </svg>
+              <span>Confirmación instantánea</span>
+            </div>
+          </div>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<style>
+  @keyframes float {
+    0%, 100% { transform: translateY(0px) translateX(0px); }
+    50% { transform: translateY(-20px) translateX(10px); }
+  }
+  
+  @keyframes float-delayed {
+    0%, 100% { transform: translateY(0px) translateX(0px); }
+    50% { transform: translateY(-30px) translateX(-10px); }
+  }
+  
+  @keyframes fade-in {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  @keyframes fade-in-up {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  @keyframes scale-in {
+    from { opacity: 0; transform: scale(0.95); }
+    to { opacity: 1; transform: scale(1); }
+  }
+
+  @keyframes gradient {
+    0%, 100% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+  }
+  
+  .animate-float {
+    animation: float 20s ease-in-out infinite;
+  }
+  
+  .animate-float-delayed {
+    animation: float-delayed 25s ease-in-out infinite;
+  }
+  
+  .animate-fade-in {
+    animation: fade-in 0.6s ease-out;
+  }
+  
+  .animate-fade-in-up {
+    animation: fade-in-up 0.8s ease-out 0.2s both;
+  }
+  
+  .animate-scale-in {
+    animation: scale-in 0.8s ease-out 0.4s both;
+  }
+
+  .animate-gradient {
+    background-size: 200% auto;
+    animation: gradient 3s ease infinite;
+  }
+</style>
